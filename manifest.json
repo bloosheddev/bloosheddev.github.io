@@ -1,0 +1,24 @@
+{
+  "name": "BlooshedDev Land",
+  "display": "fullscreen",
+  "start_url": "/",
+  "short_name": "BlooshedDev Land",
+  "theme_color": "#6bc7ff",
+  "description": "PWA Apps!",
+  "orientation": "portrait",
+  "background_color": "#6bc7ff",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/assets/icon_512.png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/assets/maskable_icon.png",
+      "sizes": "640x640",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

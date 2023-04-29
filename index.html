@@ -1,11 +1,21 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Testing Tittle</title>
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6bc7ff">
+    <title>Blooshed Dev</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="/assets/icon_512.png"/>
+    <link rel="manifest" href="manifest.json"/>
+  </head>
+  <body>
         <header>
-            <h1 class="htmlTitle">Blooshed Dev</h1>
+            <div class="logo">
+              <img src="assets/profile.png" alt="logo" class="logo-img" />
+            </div>
             <nav>
                 <ul>
                     <li><a href="#">Home</a> </li>
@@ -15,5 +25,13 @@
             </nav>
             <button class="btn-cta">utub</button>
         </header>
-    </body>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      };
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
