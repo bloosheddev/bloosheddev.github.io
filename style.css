@@ -1,0 +1,40 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Fredoka;
+}
+header {
+    background-color: #009eff;
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.htmlTitle{
+    margin-right: auto;
+    margin-left: 10px;
+}
+.btn-cta {
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 6px 12px;
+    background: #5cc0ff;
+    color: #ffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    padding: 20px;
+}
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+a {
+    color: #eaeaea;
+    text-decoration: none;
+}
