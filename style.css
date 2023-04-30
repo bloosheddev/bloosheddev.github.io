@@ -21,17 +21,6 @@ header {
   width: 80px;
   height: 80px;
 }
-.btn-cta {
-    margin-right: 15px;
-    border: none;
-    font-size: 20px;
-    padding: 6px 12px;
-    background: #5cc0ff;
-    color: #ffff;
-    border-radius: 5px;
-    cursor: pointer;
-  margin-left: auto;
-}
 nav ul{
   display: flex;
 }
