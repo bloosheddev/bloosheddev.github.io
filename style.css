@@ -6,11 +6,12 @@
 }
 header {
   background-color: #009eff;
-  width: 100vw;
+  top: 0;
+  overflow: hidden;
   color: #eaeaea;
   display: flex;
   align-items: center;
-  box-shadow: 0px 0px 30px #707070;
+  box-shadow: 0px 0px 30px #009eff;
 }
 .logo {
   margin-left: 0px;
@@ -40,8 +41,49 @@ a {
     color: #ffff;
     text-decoration: none;
 }
-.btn-cta:hover {
-    border: 2px solid #3195d3;
-    box-shadow: 0 25px 50px -12px #673ab888;
-    transition: 250ms
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* About */
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 0vh;
+}
+.my {
+  margin-left: 15vw;
+  margin-right: auto;
+	display: flex;
+  width: 30vw;
+  transform: rotate(5deg);
+}
+.itch {
+	margin-right: 10px;
+	border: none;
+	font-size: 1.25vw;
+	padding: 6px 12px;
+	background: #71d7ff;
+	color: #ffff;
+	border-radius: 1vh;
+	cursor: pointer;
+  width: 8vw;
+  height: 6.5vh;
+  margin-top: 7.5vh;
+}
+.text-container {
+  margin-right: 25vw;
+  align-items: center;
+  text-align: center;
+}
+.title {
+  margin-bottom: auto;
+  margin-top: -5vh;
+  font-size: 3vw;
+  color: #ffff;
+  transform: rotate(2.5deg);
 }
