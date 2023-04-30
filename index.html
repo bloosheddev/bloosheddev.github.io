@@ -7,13 +7,14 @@
     <title>Blooshed Dev</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="scrollbar.css" rel="stylesheet" type="text/css" />
+    <link href="navbar.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon"/>
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
     <link rel="apple-touch-icon" href="/assets/icon_512.png"/>
     <link rel="manifest" href="manifest.json"/>
   </head>
   <body style="background-color:#2fc3ff;">
-    <header>
+    <header class="sticky">
       <div class="logo">
         <img src="assets/profile.png" alt="logo" class="logo-img" />
       </div>
@@ -21,7 +22,7 @@
           <ul>
             <li><a href="#">Home</a> </li>
             <li><a href="#">Games</a> </li>
-            <li><a href="about.html" title="about">About</a> </li>
+            <li><a href="nav/about.html" title="about">Project</a> </li>
           </ul>
         </nav>
         <div class="blue">
@@ -37,8 +38,9 @@
         </div>
       </div>
     </section>
-
-
+    <section class="project">
+      <p class="project-title">My Project!</p>
+    </section>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
@@ -48,10 +50,6 @@
       function itchio() {
         window.location.href = "https://blooshed-developer.itch.io/"
       };
-      window.addEventListener("scroll", function(){
-        var header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-      });
     </script>
     <script src="script.js"></script>
   </body>
