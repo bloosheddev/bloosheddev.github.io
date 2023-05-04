@@ -14,10 +14,27 @@
     <link rel="manifest" href="manifest.json"/>
   </head>
   <body style="background-color:#2fc3ff;">
-    <div>
-      <h1>Uh oh</h1>
-      <h2>404 Not Found :C</h2>
-    </div>
+    <header class="sticky">
+      <div class="logo">
+        <img src="assets/profile.png" alt="logo" class="logo-img" />
+      </div>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a> </li>
+            <li><a href="/">Games</a> </li>
+            <li><a href="/project/" title="about">Project</a> </li>
+          </ul>
+        </nav>
+        <div class="blue">
+          <img src="assets/blue.png" alt="blue" class="blue-img" />
+        </div>
+    </header>
+    <section class="intro">
+          <div>
+            <h1>Uh oh</h1>
+            <h2>404 Not Found :C</h2>
+          </div>
+      </section>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
@@ -27,13 +44,4 @@
     </script>
     <script src="script.js"></script>
   </body>
-  <style>
-    div {
-      position: absolute;
-      text-align: center;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  </style>
 </html>
