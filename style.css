@@ -13,7 +13,7 @@ body * {
   .mainbutton {
     margin-right: 10px;
     border: none;
-    font-size: 20px;
+    font-size: 25px;
     padding: 6px 12px;
     background: #71d7ff;
     color: #ffff;
@@ -48,7 +48,7 @@ body * {
   .title {
     margin-bottom: auto;
     margin-top: auto;
-    font-size: 25px;
+    font-size: 35px;
     color: #ffff;
     transform: rotate(-0.5deg);
   }
@@ -82,7 +82,7 @@ body * {
   .mainbutton {
     margin-right: 10px;
     border: none;
-    font-size: 19px;
+    font-size: 25px;
     background: #71d7ff;
     color: #ffff;
     border-radius: 10px;
@@ -92,8 +92,7 @@ body * {
     margin-top: 2vh;
   }
   .my {
-    margin-left: 15vw;
-    margin-right: 2vw;
+    margin-left: 10vw;
     display: flex;
     width: 30vh;
     transform: rotate(5deg);
@@ -108,13 +107,14 @@ body * {
   }
   .text-container {
     margin-right: 25vw;
+    margin-left: 5vw;
     align-items: center;
     text-align: center;
   }
   .title {
     margin-bottom: auto;
     margin-top: -5vh;
-    font-size: 3vw;
+    font-size: 3.5vmax;
     color: #ffff;
     transform: rotate(2.5deg);
   }
