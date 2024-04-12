@@ -92,8 +92,8 @@ body * {
     margin-top: 2vh;
   }
   .my {
-    margin-left: 12vw;
-    margin-right: 1vw;
+    margin-left: 15vw;
+    margin-right: 2vw;
     display: flex;
     width: 30vh;
     transform: rotate(5deg);
