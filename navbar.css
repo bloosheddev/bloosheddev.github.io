@@ -65,13 +65,6 @@
     color: #ffff;
     text-decoration: none;
   }
-  /* nav ul{
-    display: flex;
-    flex-direction: row;
-  }
-  nav{
-    margin: auto;
-  } */  /* ---------Hide The Menu--------------*/
   .sticky {
     position: fixed;
     top: 0;

@@ -113,7 +113,8 @@ body * {
     margin-right: 10px;
     border: none;
     font-size: 25px;
-    background: #71d7ff;
+    background: #0aa1ffb0;
+    box-shadow: 0px 0px 15px #009eff;
     color: #ffff;
     border-radius: 10px;
     cursor: pointer;
