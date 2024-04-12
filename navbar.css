@@ -58,12 +58,13 @@
   a {
     color: #ffff;
     text-decoration: none;
+
   }
   nav{
     margin: auto;
   }
   .sticky {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
   }
