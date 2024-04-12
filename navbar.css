@@ -1,23 +1,31 @@
 @media only screen and (min-width: 636px) {
   header {
-    background-color: #009eff;
-    top: 0;
+    background-color: #009dffb0;
     overflow: hidden;
     color: #eaeaea;
     display: flex;
     align-items: center;
     box-shadow: 0px 0px 30px #009eff;
     z-index: 10000;
+    border-radius: 15px;
+    margin: 12.5px;
+    backdrop-filter: blur(10px);
+  }
+  .sticky {
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
   }
   .logo {
-    margin-left: 0px;
+    margin-left: 0;
     display: flex;
     width: 80px;
     height: 80px;
   }
   .blue {
-    margin-right: 0px;
-    display: flex;
+    display: none;
     width: 80px;
     height: 80px;
   }
@@ -37,34 +45,35 @@
       color: #ffff;
       text-decoration: none;
   }
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+  .menu-icon {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 635px) {
   header {
-    background-color: #009eff;
+    /* background-color: #009dff; */
     top: 0;
     overflow: hidden;
     color: #eaeaea;
     display: flex;
     align-items: center;
-    box-shadow: 0px 0px 30px #009eff;
+    /* box-shadow: 0px 0px 30px #009dff; */
     z-index: 10000;
   }
   a {
     color: #ffff;
     text-decoration: none;
-
+  }
+  /* nav ul{
+    display: flex;
+    flex-direction: row;
   }
   nav{
     margin: auto;
-  }
+  } */  /* ---------Hide The Menu--------------*/
   .sticky {
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     width: 100%;
   }
@@ -79,5 +88,33 @@
   }
   .blue {
     display: none;
+  }
+  .hideOnMobile {
+    display: none;
+  } /* Hide The Menu-------- */
+  .menu-icon {
+    background: #009dffb4;
+    border-radius: 10px;
+    z-index: 1001;
+    backdrop-filter: blur(10px);
+  }
+  nav {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+  }
+  .sidebar {
+    margin-left: 15px;
+    margin-top: 10px;
+    z-index: 1000;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px #7eb3d4;
+    position: fixed;
+    top: 85px;
+    left: 0;
+    background-color: #ade8ffb4;
+    backdrop-filter: blur(10px);
   }
 }

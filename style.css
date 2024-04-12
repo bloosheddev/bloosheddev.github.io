@@ -76,7 +76,7 @@ body * {
     display: flex;
     justify-content: center;
     margin-bottom: 1.5vh;
-    font-size: 8vw;
+    font-size: 10vw;
     color: #ffff;
     /* transform: rotate(-7.5deg); */
   }
@@ -84,6 +84,7 @@ body * {
     margin: auto;
     width: 80vmin;
     border-radius: 20px;
+    background: #e4f7ff;
   }
   .project-grid {
     display: grid;
@@ -163,6 +164,7 @@ body * {
     margin: auto;
     width: 400px;
     border-radius: 20px;
+    background: #e4f7ff;
   }
   .project-grid {
     display: grid;
