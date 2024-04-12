@@ -21,8 +21,8 @@
         <nav>
           <ul>
             <li><a href="/">Home</a> </li>
-            <li><a href="/">Games</a> </li>
-            <li><a href="/project" title="about">Project</a> </li>
+            <li><a href="/">Project</a> </li>
+            <li><a href="/project" title="about">About</a> </li>
           </ul>
         </nav>
         <div class="blue">
@@ -33,7 +33,10 @@
         <img src="assets/profile.png" alt="logo" class="my" />
         <nav class="text-container">
           <p class="title">Hi, Im BlooshedDev!</p>
-          <button class="itch" onclick="itchio()">My Itch.io!</button>
+          <section class="button-area">
+            <button class="mainbutton" onclick="itchio()">Itch.io!</button>
+            <button class="mainbutton" onclick="github()">Github!</button>
+          </section>
         </nav>
     </section>
     <section class="project">
@@ -48,6 +51,9 @@
       function itchio() {
         window.location.href = "https://blooshed-developer.itch.io/"
       };
+      function github() {
+        window.location.href = "https://github.com/BlooshedDev"
+      }
     </script>
     <script src="script.js"></script>
   </body>

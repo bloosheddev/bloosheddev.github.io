@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 636px) {
   header {
     background-color: #009eff;
     top: 0;
@@ -44,7 +44,7 @@
   }
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 635px) {
   header {
     background-color: #009eff;
     top: 0;
