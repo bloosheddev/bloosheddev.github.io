@@ -35,7 +35,7 @@ body * {
   }
   .intro {
     justify-content: center;
-    min-height: 100vh;
+    min-height: 65vh;
     width: 100%;
     margin-top: auto;
   }
@@ -65,6 +65,14 @@ body * {
     padding: 15px;
     margin-right: auto;
     margin-left: auto;
+  }
+  /* ------------------------------PROJECT--------------------- */
+  .project-title {
+    margin-left: 8.5vw;
+    margin-top: auto;
+    font-size: 8vw;
+    color: #ffff;
+    transform: rotate(-7.5deg);
   }
 }
 
@@ -113,7 +121,7 @@ body * {
   .project-title {
     margin-left: 8.5vw;
     margin-top: auto;
-    font-size: 3vw;
+    font-size: 7.5vmin;
     color: #ffff;
     transform: rotate(-7.5deg);
   }
