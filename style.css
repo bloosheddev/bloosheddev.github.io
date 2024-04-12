@@ -39,7 +39,7 @@ body * {
   }
   .intro {
     justify-content: center;
-    min-height: 65vh;
+    min-height: 80vh;
     width: 100%;
     margin-top: auto;
   }
@@ -73,11 +73,35 @@ body * {
   }
   /* ------------------------------PROJECT--------------------- */
   .project-title {
-    margin-left: 8.5vw;
-    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5vh;
     font-size: 8vw;
     color: #ffff;
-    transform: rotate(-7.5deg);
+    /* transform: rotate(-7.5deg); */
+  }
+  .placehold {
+    margin: auto;
+    width: 80vmin;
+    border-radius: 20px;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    grid-gap: 45px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 65px;
+  }
+  .pr-name {
+    color: #000000;
+    font-size: xx-large;
+    text-align: center;
+  }
+  .project-card {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -97,10 +121,10 @@ body * {
     margin-top: 2vh;
   }
   .my {
-    margin-left: 10vw;
+    margin-left: auto;
+    margin-right: 1vw;
     display: flex;
     width: 30vh;
-    transform: rotate(5deg);
   }
   .intro {
     display: flex;
@@ -123,14 +147,42 @@ body * {
     color: #ffff;
     transform: rotate(2.5deg);
   }
+  /* ------------------------------PROJECT--------------------- */
   .project-title {
-    margin-left: 8.5vw;
     margin-top: auto;
     font-size: 7.5vmin;
     color: #ffff;
-    transform: rotate(-7.5deg);
+    /* transform: rotate(-7.5deg); */
+    margin-bottom: 3vh;
+    text-align: center;
   }
   .button-area {
     margin-top: 2vh;
   }
+  .placehold {
+    margin: auto;
+    width: 400px;
+    border-radius: 20px;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 0fr));
+    /* grid-template-columns: 410px; */
+    grid-gap: 15px;
+    margin: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 75px;
+  }
+  .pr-name {
+    color: #000000;
+    font-size: xx-large;
+    text-align: center;
+  }
+}
+
+.my {
+  transition: transform 1s;
 }

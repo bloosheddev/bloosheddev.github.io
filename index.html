@@ -12,6 +12,7 @@
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
     <link rel="apple-touch-icon" href="/assets/icon_512.png"/>
     <link rel="manifest" href="manifest.json"/>
+    <script src="main.js"></script>
   </head>
   <body style="background-color:#2fc3ff;">
     <header class="sticky">
@@ -41,20 +42,20 @@
     </section>
     <section class="project">
       <p class="project-title">My Project!</p>
-    </section>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/sw.js');
-        });
-      };
-      function itchio() {
-        window.location.href = "https://blooshed-developer.itch.io/"
-      };
-      function github() {
-        window.location.href = "https://github.com/BlooshedDev"
-      }
-    </script>
-    <script src="script.js"></script>
+    <div class="project-grid">
+      <div class="project-card">
+        <img class="placehold" src="https://placehold.co/400x300">
+        <h1 class="pr-name">Nothing :C</h1>
+      </div>
+      <div class="project-card">
+        <img class="placehold" src="https://placehold.co/400x300">
+        <h1 class="pr-name">Nothing :C</h1>
+      </div>
+      <div class="project-card">
+        <img class="placehold" src="https://placehold.co/400x300">
+        <h1 class="pr-name">Nothing :C</h1>
+      </div>
+    </div>
+  </section>
   </body>
 </html>
