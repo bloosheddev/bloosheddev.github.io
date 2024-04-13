@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <body style="background-color:#f0eded;">
+    <head>
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#000000">
+        <title>Dear OSIS</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="scrollbar.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
+        <link rel="apple-touch-icon" href="/assets/icon_512.png"/>
+        <script src="main.js"></script>
+      </head>
+      <div class="rules-page" style="display: flex">
+        <a class="rules-tittle">Peraturan</a>
+        <ol>
+            <li><a class="rulesData">Tidak mengandung unsur kebencian SARA.</a></li>
+            <li><a class="rulesData">Boleh menggunakan bahasa non formal namun tetap sopan.</a></li>
+            <li><a class="rulesData">Hanya diperbolehkan memberikan kritik dan saran yang berhubungan tentang sekolah.</a></li>
+            <li><a class="rulesData">Tidak memberi kritik dan saran diluar tanggung jawab osis.</a></li>
+            <a class="tips">Tips: Pencet tombol peraturan untuk menghide</a>
+        </ol>
+    </div>
+    <div class="popupConfirmation" style="display: none;">
+        <a style="color: white">Apakah jawaban yang akan kirim sudah benar?</a>
+        <button class="yes" onclick="send()">Kirim</button>
+        <button class="no" onclick="no()">Tidak</button>
+    </div>
+      <section class="form-tittle">
+        <h1 class="tittle">Dear OSIS</h1>
+      </section>
+    <section class="form-page">
+        <textarea required class="input-form" placeholder="Tuliskan Saran/Kritik/Ide!"></textarea>
+        <div class="button-area">
+            <input type="submit" class="send" onclick="send_answer()"></input>
+            <button class="rules" onclick="rules()">Peraturan</button>
+        </div>
+    </form>
+    </body>
+</html>
