@@ -111,6 +111,13 @@ body * {
         margin-bottom: 3vh;
         display: flex;
     }
+    .rulesData {
+        color: #efeded;
+        font-size: 20px;
+    }
+    li::marker {
+        color: #efeded;
+    }
 }
 
 @media only screen and (min-width: 636px) {
