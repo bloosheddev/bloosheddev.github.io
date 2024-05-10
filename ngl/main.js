@@ -39,8 +39,9 @@ function sendData() {
 
         const d = new Date();
         const formattedTime = `${d.getFullYear()}-${d.getMonth()}-${d.getDay()} | ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()},${d.getMilliseconds()}`
+        const databaseTitle = formattedTime + " | " + textinput[0]
       
-        database.ref(formattedTime + " | " + textinput[0]).set({
+        database.ref(databaseTitle).set({
             textinput : textinput,
         })
     
