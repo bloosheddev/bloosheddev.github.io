@@ -22,9 +22,10 @@ body * {
         justify-content: center;
     }
     .tittle {
-        font-size: 7.5vw;
+        font-size: 35px;
     }
     .form-page {
+        margin-top: 25vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -34,29 +35,55 @@ body * {
         cursor: pointer;
         text-decoration: none;
         border: none;
-        box-shadow: 0px 0px 10px #f5bbbb;
-        background: #ddb8b6;
         margin-top: 20px;
-        font-size: 4vw;
-        border-radius: 10px;
-        padding: 2.5vh 28vw;
-        width: 75vw;
+        font-size: 20px;
+        border-radius: 300px;
+        width: 85vw;
+        height: 65px;
+        justify-content: center;
+        background: #000000;
+        color: white;
     }
     .input-form {
-        border-radius: 10px;
+        border-radius: 30px;
+        background-color: #ffffffa6;
+        padding: 20px 20px 20px 20px;
         outline: none;
         resize: none;
-        width: 75vw;
-        height: 50vw;
-        font-size: 4vw;
+        width: 85vw;
+        height: 275px;
+        font-size: 20px;
         border: none;
-        margin-top: 50px;
-        box-shadow: 0px 0px 10px #ffffff;
+        margin-top: 20px;
     }
-    .button-area {
+    .header {
+        border-radius: 300px;
+        width: 85vw;
+        padding: 15px 15px 15px;
+        margin-bottom: 5px;
+        background: #ffffff;
+        display: flex;
+        justify-content: left;
+    }   
+    .logo-img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50px;
+    }
+    .info {
         display: flex;
         flex-direction: column;
-        padding-bottom: 50px;
+        font-size: 15px;
+        margin-left: 15px;
+        justify-content: center;
+    }
+    .user {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .desc {
+        font-size: 13px;
+        font-weight: 600;
     }
 }
 
@@ -106,7 +133,7 @@ body * {
         color: white;
     }
     .form-page {
-        margin-top: 50px;
+        margin-top: 25vh;
         display: flex;
         flex-direction: column;
     }
@@ -135,26 +162,7 @@ body * {
         display: flex;
         justify-content: left;
         font-size: 15px;
-    }
-    .button-area {
-        display: flex;
-        flex-direction: row;
-    }
-    .rules-page {
-        position: fixed;
-        z-index: 1000;
-        overflow: hidden;
-        max-width: fit-content;
-        border-radius: 15px;
-        padding: 70px 10vmin;
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -35%);
-        box-shadow: 0px 0px 10px #88605e;
-        background: #6b4947a8;
-        backdrop-filter: blur(10px);
-        flex-direction: column;
-    }
+    }   
     .logo-img {
         width: 45px;
         border-radius: 50px;
