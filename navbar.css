@@ -16,7 +16,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 350px;
+    min-width: 350px;
   }
   .logo {
     margin-left: 0;
@@ -59,7 +59,6 @@
     display: flex;
     align-items: center;
     /* box-shadow: 0px 0px 30px #009dff; */
-    z-index: 10000;
   }
   a {
     color: #ffff;
