@@ -1,8 +1,9 @@
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/sw.js');
-    });
-};
+// SW PWA
+// if ('serviceWorker' in navigator) {
+//     window.addEventListener('load', function() {
+//       navigator.serviceWorker.register('/sw.js');
+//     });
+// };
 function itchio() {
     window.location.href = "https://blooshed-developer.itch.io/"
 };
