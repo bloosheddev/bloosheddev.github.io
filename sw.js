@@ -6,8 +6,6 @@
 //https://developer.mozilla.org/en-US/docs/Web/API/FetchEvent/respondWith
 //https://developer.mozilla.org/en-US/docs/Web/API/ExtendableEvent/waitUntil
 
-// how to hack youtube
-
 const filesToCache = [
   '.',
   '/style.css',
