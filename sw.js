@@ -1,4 +1,5 @@
-  //Minimal Precaching & Runtime Caching ServiceWorker
+/*
+//Minimal Precaching & Runtime Caching ServiceWorker
 
 //https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 //https://developers.google.com/web/ilt/pwa/lab-caching-files-with-service-worker
@@ -61,3 +62,4 @@ self.addEventListener('fetch', function(event) {
     })
   );
 });
+*/
