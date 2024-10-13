@@ -57,6 +57,7 @@
     overflow: hidden;
     color: #eaeaea;
     display: flex;
+    z-index: 10000;
     align-items: center;
     /* box-shadow: 0px 0px 30px #009dff; */
   }
@@ -77,7 +78,6 @@
   }
   .logo {
     display: none;
-    z-index: 0;
   }
   .blue {
     display: none;
