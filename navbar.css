@@ -91,7 +91,7 @@
     z-index: 1001;
     backdrop-filter: blur(10px);
   }
-  nav {
+  .navigation-bar {
     margin-left: 20px;
     margin-top: 20px;
     display: flex;
