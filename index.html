@@ -1,68 +1,98 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#6bc7ff">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6bc7ff" />
+    <meta name="description" content="Just a blue web." />
+    <meta name="keywords" content="Blooshed Developer" />
+    <meta name="author" content="BlooshedDev" />
+
     <title>Blooshed Dev</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="scrollbar.css" rel="stylesheet" type="text/css" />
     <link href="navbar.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon"/>
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
-    <link rel="apple-touch-icon" href="/assets/icon_512.png"/>
-<!--     <link rel="manifest" href="manifest.json"/> -->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/assets/icon_512.png" />
+    <!-- <link rel="manifest" href="manifest.json" /> -->
     <script src="main.js"></script>
   </head>
-  <body style="background-color:#2fc3ff;">
+  <body style="background-color: #2fc3ff">
     <header class="sticky">
       <div class="logo">
         <img src="assets/profile.png" alt="logo" class="logo-img" />
       </div>
-        <nav>
-          <ul class="nav-list">
-            <li class="hideOnMobile"><a href="/">Home</a></li>
-            <li class="hideOnMobile"><a href="https://labs.bloosheddev.my.id/">Labs</a></li>
-            <li class="hideOnMobile"><a href="/project" title="about">About</a></li>
-            <li class="menu-icon" onclick="showSidebar()"><a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi_bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-              </svg>
-            </a></li>
-          </ul>
-          <ul class="sidebar" style="display: none;">
-            <li><a href="/">Home</a></li>
-            <li><a href="https://labs.bloosheddev.my.id/">Labs</a></li>
-            <li><a href="/project" title="about">About</a></li>
-          </ul>
-        </nav>
+      <nav>
+        <ul class="nav-list">
+          <li class="hideOnMobile"><a href="/">Home</a></li>
+          <li class="hideOnMobile">
+            <a href="https://labs.bloosheddev.my.id/">Labs</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="/project" title="about">About</a>
+          </li>
+          <li class="menu-icon" onclick="showSidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi_bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </li>
+        </ul>
+        <ul class="sidebar" style="display: none">
+          <li><a href="/">Home</a></li>
+          <li><a href="https://labs.bloosheddev.my.id/">Labs</a></li>
+          <li><a href="/project" title="about">About</a></li>
+        </ul>
+      </nav>
     </header>
     <section class="intro">
-        <img src="assets/profile.png" alt="logo" class="my" />
-        <nav class="text-container">
-          <p class="title">Hi, Im BlooshedDev!</p>
-          <section class="button-area">
-            <button class="mainbutton" onclick="itchio()">Itch.io!</button>
-            <button class="mainbutton" onclick="github()">Github!</button>
-          </section>
-        </nav>
+      <img src="assets/profile.png" alt="logo" class="my" />
+      <nav class="text-container">
+        <p class="title">Hi, Im BlooshedDev!</p>
+        <section class="button-area">
+          <button class="mainbutton" onclick="itchio()">Itch.io!</button>
+          <button class="mainbutton" onclick="github()">Github!</button>
+        </section>
+      </nav>
     </section>
     <section class="project">
       <p class="project-title">My Project!</p>
-    <div class="project-grid">
-      <div class="project-card">
-        <img class="placehold" src="https://placehold.co/400x300">
-        <h1 class="pr-name">Nothing :C</h1>
+      <div class="project-grid">
+        <div class="project-card">
+          <img
+            class="placehold"
+            alt="placehold"
+            src="https://placehold.co/400x300"
+          />
+          <h1 class="pr-name">Nothing :C</h1>
+        </div>
+        <div class="project-card">
+          <img
+            class="placehold"
+            alt="placehold"
+            src="https://placehold.co/400x300"
+          />
+          <h1 class="pr-name">Nothing :C</h1>
+        </div>
+        <div class="project-card">
+          <img
+            class="placehold"
+            alt="placehold"
+            src="https://placehold.co/400x300"
+          />
+          <h1 class="pr-name">Nothing :C</h1>
+        </div>
       </div>
-      <div class="project-card">
-        <img class="placehold" src="https://placehold.co/400x300">
-        <h1 class="pr-name">Nothing :C</h1>
-      </div>
-      <div class="project-card">
-        <img class="placehold" src="https://placehold.co/400x300">
-        <h1 class="pr-name">Nothing :C</h1>
-      </div>
-    </div>
-  </section>
+    </section>
   </body>
 </html>
