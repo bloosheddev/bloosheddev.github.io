@@ -1,52 +1,19 @@
-function rules() {
-    const rulesPage = document.querySelector('.rules-page');
-    if (rulesPage.style.display == 'none') {
-        rulesPage.style.display = 'flex'
-    } else {
-        rulesPage.style.display = 'none'
-    }
-}
-function send_answer() {
-    const popupConfirmation = document.querySelector('.popupConfirmation');
-    popupConfirmation.style.display = 'flex'
-}
-function no() {
-    const popupConfirmation = document.querySelector('.popupConfirmation');
-    if (popupConfirmation.style.display == 'none') {
-        popupConfirmation.style.display = 'flex'
-    } else {
-        popupConfirmation.style.display = 'none'
-    }
-}
+const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJla2hoZmpqdXdxdnVvcnR4b3N6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjg5MDQwNjksImV4cCI6MjA0NDQ4MDA2OX0.-YEmIcPDyA8YY4W5WzVy9tCwGK_TRP1U0gvQuSd3il0";
+const url = "https://bekhhfjjuwqvuortxosz.supabase.co";
+const database = supabase.createClient(url, key);
 
-var firebaseConfig = {
-    apiKey: "AIzaSyBsfvYCK_gBwI-H364QGj9B-fM2XIer-yI",
-    authDomain: "testing-30166.firebaseapp.com",
-    databaseURL: "https://testing-30166-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "testing-30166",
-    storageBucket: "testing-30166.appspot.com",
-    messagingSenderId: "92962221541",
-    appId: "1:92962221541:web:0de2db4802b3569216d30c"
-};
-
-firebase.initializeApp(firebaseConfig);
-var database = firebase.database()
-  
-function sendData() {
-    var textinput = document.getElementById('textinput').value.split('\n')
-    console.log(textinput)
+const sendData = async () => {
+    var textinput = document.getElementById('textinput').value/*.split('\n')*/
     if (textinput != '') {
 
         const d = new Date();
         const formattedTime = `${d.getFullYear()}-${d.getMonth()}-${d.getDay()} | ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()},${d.getMilliseconds()}`
         const databaseTitle = formattedTime + " | " + textinput[0]
-      
-        database.ref(databaseTitle).set({
-            textinput : textinput,
+
+        let res = await database.from("testing").insert({
+            textinput : textinput
         })
     
         document.getElementById('textinput').value = ''
-        document.querySelector('.popupConfirmation').style.display = 'none'
-
     }
 }
