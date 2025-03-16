@@ -16,7 +16,7 @@ my.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
 }, 1000);
 function showSidebar() {
     const sidebar = document.querySelector('.sidebar');
-    if (sidebar.style.display == 'none') {
+    if (sidebar.style.display = 'none') {
         sidebar.style.display = 'flex'
     } else {
         sidebar.style.display = 'none'

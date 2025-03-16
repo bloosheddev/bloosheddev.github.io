@@ -15,5 +15,6 @@ const sendData = async () => {
         })
     
         document.getElementById('textinput').value = ''
+	alert("Successfully Sent The Message!")
     }
 }
