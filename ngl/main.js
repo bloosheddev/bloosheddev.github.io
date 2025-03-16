@@ -11,10 +11,11 @@ const sendData = async () => {
         const databaseTitle = formattedTime + " | " + textinput[0]
 
         let res = await database.from("testing").insert({
-            textinput : textinput
+            textinput : textinput,
+            readed : false
         })
     
         document.getElementById('textinput').value = ''
-	alert("Successfully Sent The Message!")
+        alert("Successfully Sent The Message!")
     }
 }
